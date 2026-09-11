@@ -1,4 +1,4 @@
-# Garmin watch face tips
+# Garmin SDK tips
 
 ## Using Garmin SDK on Fedora and latest Linux distributions
 
