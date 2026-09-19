@@ -47,7 +47,15 @@ Put these files in the `fonts` folder (an optional subfolder is fine), then decl
 ```xml
 <font id="id_retro" filename="fonts/retro/retro.fnt" antialias="true" filter="0123456789"/>
 ```
+## Garmin examples
+
+Garmin code examples can be found in the `samples` folder downloaded with your SDK. This folder is located here:
+
+```
+~/.Garmin/ConnectIQ/Sdks/your-SDK/samples/Analog
+```
 ## Garmin devices
 ### Garmin Venu 4 41 mm
 - https://www.garmin.com/fr-CH/p/1613801/#specs
 - screen size: round, 390 x 390 px
+
