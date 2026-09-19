@@ -22,6 +22,12 @@ Install the Monkey C extension for VS Code following Garmin's instructions on [d
 ### Simulator
 
 For the simulator itself, the easiest way is to find an AppImage packed with the downgraded dependencies, made by the community. I used the one made by Paul Colby, selecting the latest release (Connect IQ Simulator 9.2.0, [pcolby/connectiq-sdk-manager](https://github.com/pcolby/connectiq-sdk-manager/tree/main)).
+## Project structure
+
+* `bin`: contains binary and debug output from the app compilation
+* `resources`: inputs to the resource compiler, such as layouts, images, fonts, strings, and language-specific resources
+* `source`: contains the Monkey C source files, initially split into `App` and `View` files
+* `manifest.xml`: application properties like the app id, the app type, and the targeted devices
 ## Fonts
 
 You can find free and non-free fonts on sites like [dafont.com](https://www.dafont.com/).
