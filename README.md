@@ -30,9 +30,15 @@ For the simulator itself, the easiest way is to find an AppImage packed with the
 * `manifest.xml`: application properties like the app id, the app type, and the targeted devices
 ## Fonts
 
-You can find free and non-free fonts on sites like [dafont.com](https://www.dafont.com/).
+### Using custom fonts
 
-The resource compiler reads fonts in `TXT` or `PNG` format. Convert the font using [BMFont](https://www.angelcode.com/products/bmfont/) or another BMFont-compatible generator. BMFont is a Windows application, but it runs fine under Wine on Linux. Prior to export, ensure that BMFont's _Font Settings_ specify the Unicode character set.
+You can find free and non-free fonts on sites like dafont.com.
+
+To avoid "moving text," choose a monospaced font. If you want to use this font to display time only, and want to be able to precisely align it on the screen, you can use a font creation program like FontForge to remove the space above and below reserved for characters like t or q. To do this, set Descent value to 0, and match the "BlueValues" to the Ascent value.
+
+The resource compiler reads the font descriptor in text .fnt format, together with the .png image page(s). You can convert the font using BMFont or another BMFont-compatible generator. BMFont is a Windows application, but it runs fine under Wine on Linux.
+
+Export your font in .ttf format from FontForge, then install it on your computer, or, if you are using BMFont with Wine, put it in the folder `~/.wine/drive_c/windows/Fonts`. Prior to export, ensure that BMFont's Font Settings specify the Unicode character set.
  
 The generator produces two files:
 - one .fnt metadata file
